@@ -1,0 +1,28 @@
+There are totally 4 rest api mapping method in our controller,
+and for each method in controller, we call service method, then we use
+a static list of books to pretend data from database.
+
+localhost:8080/allBooks
+get mapping
+retrieve all books in our list as a list in json format;
+
+
+localhost:8080/getByAuthor/{author_name}:
+get mapping
+retrieve all books in our list with same author's name as a list in json format;
+
+
+localhost:8080/getByTitle/{partial title}:
+get mapping
+retrieve all books in our list with partial title matched as a list in json format;
+
+
+localhost:8080/addBook:
+post mapping
+send a json to backend side, such as:
+{
+	"id":10,
+	"title":"new",
+	"author":"newAu"
+}	
+retrieve all books in our list as a list in json format;
